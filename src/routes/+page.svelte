@@ -1,11 +1,11 @@
 <script>
   import Neko from '$lib/Neko.svelte';
+  import CandyButton from '$lib/CandyButton.svelte';
 
   const CDN = 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons';
 
   const links = {
-    github: 'https://github.com/codingwithmaajid',
-    linkedin: 'https://linkedin.com/in/codingwithmaajid',
+    avely: 'https://avely.me/maj',
     techStack: '/tech-stack',
   };
 
@@ -47,9 +47,8 @@
         them — and then I build them again when I realise I was wrong the first time.
       </p>
       <p>
-        This page will grow. For now, everything I have made is on
-        <a href={links.github}>GitHub</a> and I am on
-        <a href={links.linkedin}>LinkedIn</a>.
+        This page will grow. For now, find me
+        <CandyButton href={links.avely}>here</CandyButton>
       </p>
     </div>
 
