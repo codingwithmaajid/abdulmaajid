@@ -1,0 +1,38 @@
+- main [ref=f5e3]:
+  - complementary [aria-hidden]
+  - generic [ref=f5e4]:
+    - heading "Abdul Maajid" [level=1] [ref=f5e5]
+    - generic [ref=f5e6]:
+      - paragraph [ref=f5e7]: I am a CS student from Chennai, somewhere between coursework and the real thing.
+      - paragraph [ref=f5e8]: Most of what I know did not come from a classroom. It came from showing up to meetups, staying late at hackathons, reading other people's code at midnight, and slowly figuring out how systems actually hold together.
+      - paragraph [ref=f5e9]: I am drawn to agents, developer tooling, and the kind of problems that only make sense after you have sat with them for a while. I build things to understand them — and then I build them again when I realise I was wrong the first time.
+      - paragraph [ref=f5e10]:
+        - text: This page will grow. For now, everything I have made is on
+        - link "GitHub" [ref=f5e11] [cursor=pointer]:
+          - /url: https://github.com/codingwithmaajid
+        - text: and I am on
+        - link "LinkedIn" [ref=f5e12] [cursor=pointer]:
+          - /url: https://linkedin.com/in/codingwithmaajid
+        - text: .
+    - generic [ref=f5e13]:
+      - generic [ref=f5e14]: Stack
+      - generic [ref=f5e15]:
+        - generic "Python" [ref=f5e16]:
+          - img "Python" [ref=f5e17]
+        - generic "Rust" [ref=f5e18]:
+          - img "Rust" [ref=f5e19]
+        - generic "C++" [ref=f5e20]:
+          - img "C++" [ref=f5e21]
+        - generic "C" [ref=f5e22]:
+          - img "C" [ref=f5e23]
+        - generic "Linux" [ref=f5e24]:
+          - img "Linux" [ref=f5e25]
+        - generic "Docker" [ref=f5e26]:
+          - img "Docker" [ref=f5e27]
+        - generic "Git" [ref=f5e28]:
+          - img "Git" [ref=f5e29]
+        - generic "GitHub" [ref=f5e30]:
+          - img "GitHub" [ref=f5e31]
+        - link "all →" [ref=f5e32] [cursor=pointer]:
+          - /url: /tech-stack
+  - complementary [aria-hidden]

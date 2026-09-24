@@ -1,4 +1,6 @@
 <script>
+  import Neko from '$lib/Neko.svelte';
+
   const CDN = 'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons';
 
   const links = {
@@ -26,47 +28,51 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400&display=swap" rel="stylesheet" />
 </svelte:head>
 
-<main>
-  <h1>Abdul Maajid</h1>
+<main class="page">
+  <section class="content">
+    <h1>Abdul Maajid</h1>
 
-  <div class="body">
-    <p>
-      I am a CS student from Chennai, somewhere between coursework and the real thing.
-    </p>
-    <p>
-      Most of what I know did not come from a classroom. It came from showing up to
-      meetups, staying late at hackathons, reading other people's code at midnight,
-      and slowly figuring out how systems actually hold together.
-    </p>
-    <p>
-      I am drawn to agents, developer tooling, and the kind of problems that only make
-      sense after you have sat with them for a while. I build things to understand
-      them — and then I build them again when I realise I was wrong the first time.
-    </p>
-    <p>
-      This page will grow. For now, everything I have made is on
-      <a href={links.github}>GitHub</a> and I am on
-      <a href={links.linkedin}>LinkedIn</a>.
-    </p>
-  </div>
-
-  <div class="stack-section">
-    <span class="stack-label">Stack</span>
-    <div class="stack-items">
-      {#each stack as item}
-        <div class="stack-item" title={item.name}>
-          <img
-            src="{CDN}/{item.slug}.svg"
-            alt={item.name}
-            width="18"
-            height="18"
-            loading="lazy"
-          />
-        </div>
-      {/each}
-      <a href={links.techStack} class="stack-more">all →</a>
+    <div class="body">
+      <p>
+        I am a CS student from Chennai, somewhere between coursework and the real thing.
+      </p>
+      <p>
+        Most of what I know did not come from a classroom. It came from showing up to
+        meetups, staying late at hackathons, reading other people's code at midnight,
+        and slowly figuring out how systems actually hold together.
+      </p>
+      <p>
+        I am drawn to agents, developer tooling, and the kind of problems that only make
+        sense after you have sat with them for a while. I build things to understand
+        them — and then I build them again when I realise I was wrong the first time.
+      </p>
+      <p>
+        This page will grow. For now, everything I have made is on
+        <a href={links.github}>GitHub</a> and I am on
+        <a href={links.linkedin}>LinkedIn</a>.
+      </p>
     </div>
-  </div>
+
+    <div class="stack-section">
+      <span class="stack-label">Stack</span>
+      <div class="stack-items">
+        {#each stack as item}
+          <div class="stack-item" title={item.name}>
+            <img
+              src="{CDN}/{item.slug}.svg"
+              alt={item.name}
+              width="18"
+              height="18"
+              loading="lazy"
+            />
+          </div>
+        {/each}
+        <a href={links.techStack} class="stack-more">all →</a>
+      </div>
+    </div>
+  </section>
+
+  <Neko />
 </main>
 
 <style>
@@ -74,12 +80,27 @@
     margin: 0;
     padding: 0;
     background: #080808;
+    overflow-x: hidden;
   }
 
-  main {
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .content {
+    width: 100%;
     max-width: 680px;
-    margin: 0 auto;
-    padding: 4rem 2rem 6rem;
+  }
+
+  main,
+  .content {
+    position: relative;
+    z-index: 1;
     font-family: 'Inter', sans-serif;
   }
 
@@ -164,5 +185,15 @@
   .stack-more:hover {
     color: #c9b99a;
     border-bottom: none;
+  }
+
+  @media (max-width: 760px) {
+    .page {
+      padding: 1.5rem 1rem 2.5rem;
+    }
+
+    .content {
+      width: 100%;
+    }
   }
 </style>

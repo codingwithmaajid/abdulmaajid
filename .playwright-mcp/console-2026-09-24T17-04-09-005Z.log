@@ -1,0 +1,8 @@
+[      41ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:4173/:0
+[      74ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:4173/favicon.ico:0
+[      87ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4173/_app/immutable/chunks/D4-zihze.js:0
+[      87ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4173/_app/immutable/nodes/1.BMkdKDa6.js:0
+[      88ms] [ERROR] TypeError: Failed to fetch dynamically imported module: http://localhost:4173/_app/immutable/nodes/0.D8ZzMoIr.js @ http://localhost:4173/_app/immutable/entry/app.DKx1xLvN.js:1
+[      90ms] Failed to fetch dynamically imported module: http://localhost:4173/_app/immutable/nodes/0.D8ZzMoIr.js
+[      91ms] Failed to fetch dynamically imported module: http://localhost:4173/_app/immutable/nodes/1.BMkdKDa6.js
+[      96ms] Failed to fetch dynamically imported module: http://localhost:4173/_app/immutable/nodes/0.D8ZzMoIr.js

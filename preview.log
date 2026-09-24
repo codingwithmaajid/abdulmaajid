@@ -1,0 +1,9 @@
+
+> preview
+> vite preview --port 4176 --host
+
+  ➜  Local:   http://localhost:4176/
+  ➜  Network: http://192.168.1.8:4176/
+  ➜  Network: http://100.66.237.19:4176/
+
+[1;31m[404] GET /favicon.ico[0m
